@@ -1,0 +1,199 @@
+/* common css */
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+main {
+    padding: 0 150px;
+}
+
+section {
+    margin-top: 130px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 35px;
+    color: #181818;
+    text-align: center;
+    padding-bottom: 30px;
+}
+p{
+    color: #757575;
+}
+
+/* header css */
+header {
+    padding-top: 50px;
+    background: #FFF8F3;
+    background-image: url('./images/header_bg.png'), url('./images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+.btn-primary {
+    height: 64px;
+    background: #FD6E0A;
+    border: 0;
+    color: #fff;
+    padding: 18px 36px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.title-color {
+    color: #FD6E0A;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+/* Banner style */
+.banner {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0;
+    padding-left: 150px;
+}
+
+.banner-sub-title {
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 70px;
+    color: #181818;
+    padding: 20px 0;
+}
+
+.banner-description {
+    font-weight: 400;
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+/* about us */
+.about-us{
+    padding: 130px;
+    background-color: #FFF8F3;
+    text-align: center;
+}
+.developer-info{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+/* what i do */
+.skills {
+    margin-top: 50px;
+    display: flex;
+    gap: 24px;
+}
+
+.skill h3 {
+    margin: 20px 0;
+    color: #181818;
+}
+
+.skill {
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+/* my resume */
+.resume-container {
+    display: flex;
+    gap: 50px;
+}
+
+.resume-container hr {
+    margin: 20px 0;
+}
+
+.resume-container h3 {
+    margin-bottom: 20px;
+}
+
+
+footer {
+    margin-top: 100px;
+    background: #FFF8F3;
+    padding: 50px 150px;
+}
+
+.footer-area {
+    display: flex;
+    gap: 70px;
+}
+
+
+.footer-area h3 {
+    margin-bottom: 20px;
+}
+
+.footer-info img {
+    margin-top: 20px;
+}
+
+.footer-form input[type="email"], input[type="text"], textarea {
+    width: 100%;
+    margin: 8px 0;
+    border: none;
+    padding: 10px;
+}
+
+/* media quaries */
+@media (max-width:767.98px){
+    header {
+        padding: 50px;
+    }
+    main {
+        padding: 0 50px;
+    }
+    section {
+        margin-top: 50px;
+    }
+    .section-title {
+        font-weight: 200;
+        font-size: 15px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    nav {
+        padding: 0 50px;
+    }
+    ul{
+        gap: 20px;
+    }
+    .footer-area, .resume-container, .skills, .developer-info, .banner, ul, nav{
+        flex-direction: column;
+    }
+    }
